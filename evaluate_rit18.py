@@ -11,7 +11,7 @@ import numpy as np
 from scipy.io import loadmat, savemat
 from sklearn.metrics import confusion_matrix
 
-def Evaluate_RIT18(y_true, y_pred, file_name=None):
+def Evaluate_RIT18(y_true, y_pred, mask, file_name=None):
     """Standardized evaluation metrics for the RIT-18 dataset.
     
     Parameters
@@ -23,6 +23,7 @@ def Evaluate_RIT18(y_true, y_pred, file_name=None):
         prediction map.  If string, this contains a filepath to the 
         prediction map. File formats supported include .npy (Python) and 
         .mat (MATLAB).
+    mask : numpy array (int), contains mask where predictions are valid
     file_name: string (optional), file path to store the metrics.  This is
         stored as a dictionary in a .mat file.
     
@@ -31,30 +32,31 @@ def Evaluate_RIT18(y_true, y_pred, file_name=None):
     metrics : Dictionary with the following keys: 'confusion_matrix',
         'overall_accuracy', 'mean-class_accuracy', and 
         'kappa_statistic'        
-    """    
+    """
+        
     if type(y_true) == str:
         
         if y_true[-3:] == 'npy':
-            y_true = np.load(y_true)
+            y_true = np.load(y_true)[mask>0].ravel()
         elif y_true[-3:] == 'mat':
-            y_true = loadmat(y_true)
+            y_true = loadmat(y_true)[mask>0].ravel()
         else:
             raise IOError('Unrecognized filetype for y_true.')
     elif type(y_true) == np.ndarray:
-        y_true = y_true.ravel()
+        y_true = y_true[mask>0].ravel()
     else:
         raise IOError('Unrecognized datatype for y_true.')
         
         
     if type(y_pred) == str:
         if y_pred[-3:] == 'npy':
-            y_pred = np.load(y_pred)
+            y_pred = np.load(y_pred)[mask>0].ravel()
         elif y_pred[-3:] == 'mat':
-            y_pred = loadmat(y_pred)
+            y_pred = loadmat(y_pred)[mask>0].ravel()
         else:
             raise IOError('Unrecognized filetype fir y_pred.')        
     elif type(y_pred) == np.ndarray:
-        y_pred = y_pred.ravel()
+        y_pred = y_pred[mask>0].ravel()
     else:
         raise IOError('Unrecognized datatype for y_pred.')    
     
