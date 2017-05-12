@@ -7,7 +7,7 @@ High-Resolution Multispectral Dataset for Semantic Segmentation
 
 ## Description
 
-This repository contains the RIT-18 dataset we built for the semantic segmentation of remote sensing imagery.  It was collected with the Tetracam Micro-MCA6 multispectral imaging sensor onboard a DJI-1000 octocopter.  The main contributions of this dataset include 1) very-high resolution imagery from a drone, 2) six-spectral VNIR bands, and 3) 18 object classes (plus background) with a severely unbalanced class distribution.  Details about its construction can be found [in our paper](https://arxiv.org/abs/1703.01918).  
+This repository contains the RIT-18 dataset we built for the semantic segmentation of remote sensing imagery.  It was collected with the [Tetracam Micro-MCA6](http://www.tetracam.com/Products-Micro_MCA.htm) multispectral imaging sensor flown on-board a DJI-1000 octocopter.  The main contributions of this dataset include 1) very-high resolution multispectral imagery from a drone, 2) six-spectral VNIR bands, and 3) 18 object classes (plus background) with a severely unbalanced class distribution.  Details about its construction can be found [in our paper](https://arxiv.org/abs/1703.01918).  
 
 If you use this dataset in a publication, please cite:
 
@@ -44,7 +44,14 @@ The data, once downloaded, is ~3.0GB (1.58 GB compressed).  It is a .mat file co
 
 The dataset contain pixel-wise annotations for both the training and validation folds.  Both sets of labels can be used to train a classifier.  It is separated as a rough per-class split, but the validation fold does not contain the black and white wooden targets.  This is because we want to evaluate our model's ability to perform low-shot learning.
 
-The goal is to have the test labels available on the IEEE GRSS server.  Until then, send me your prediction map of the test image (same spatial dimensions as the test image) in either .npy (Python) or .mat (MATLAB) format.  I will use your predicitions on the evaluate_rit18.py I provided here and send you the output file.  As soon as I get this up on the evaluation server, then the user will be able to do all of this themselves.
+The goal is to have the test labels available on the IEEE GRSS server.  Until then, you can e-mail me your test predictions using the following format:
+
+* Same spatial dimensions as the test image (12,446 x 7,654)
+* uint8 datatype (smaller file)
+* Either .mat (MATLAB) or .npy (Python) file format
+* Compressed (so you don't kill my e-mail account)
+
+I will use your predicitions on the evaluate_rit18.py script that I provided here and send you the output file.  I will not score the area outside of the mask, but the background pixels ("class 0") will be scored.  As soon as I get this up on the evaluation server, then the user will be able to do all of this themselves.
 
 ## Contact
 
