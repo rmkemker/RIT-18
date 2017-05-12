@@ -26,6 +26,7 @@ This repository contains the following files:
 
 1. rit18_data_url: The URL to the current location of the data.
 2. evaluate_rit18.py: The evaluation script used to score the predicition map
+3. read_rit18.py: This script opens all of the data in the dataset.
 
 The data, once downloaded, is ~3.0GB (1.58 GB compressed).  It is a .mat file containing a dictionary of various elements including:
 * 'train_data' : (7 x 9,393 x 5,642) numpy array containing the training ortho.  The first six bands are the VNIR spectral bands and the 7th band is the mask of the orthomosaic.
