@@ -44,7 +44,7 @@ The data, once downloaded, is ~3.0GB (1.58 GB compressed).  It is a .mat file co
 
 The dataset contain pixel-wise annotations for both the training and validation folds.  Both sets of labels can be used to train a classifier.  It is separated as a rough per-class split, but the validation fold does not contain the black and white wooden targets.  This is because we want to evaluate our model's ability to perform low-shot learning.
 
-The goal is to have the test labels available on the IEEE GRSS server.  Until then, you can e-mail me your test predictions using the following format:
+The goal is to have the test labels available on the [IEEE GRSS evaluation server](http://dase.ticinumaerospace.com/index.php).  Until then, you can e-mail me your test predictions using the following format:
 
 * Same spatial dimensions as the test image (12,446 x 7,654)
 * uint8 datatype (smaller file)
