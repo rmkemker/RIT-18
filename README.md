@@ -1,6 +1,10 @@
 # RIT-18
 High-Resolution Multispectral Dataset for Semantic Segmentation
 
+<p align="center">
+<img  src="http://www.cis.rit.edu/~rmk6217/img/hamlin.png">
+</p>
+
 ## Description
 
 This repository contains the RIT-18 dataset we built for the semantic segmentation of remote sensing imagery.  It was collected with the Tetracam Micro-MCA6 multispectral imaging sensor onboard a DJI-1000 octocopter.  The main contributions of this dataset include 1) very-high resolution imagery from a drone, 2) six-spectral VNIR bands, and 3) 18 object classes (plus background) with a severely unbalanced class distribution.  Details about its construction can be found [in our paper](https://arxiv.org/abs/1703.01918).  
