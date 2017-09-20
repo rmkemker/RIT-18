@@ -39,7 +39,7 @@ def Evaluate_RIT18(y_true, y_pred, mask, file_name=None):
         if y_true[-3:] == 'npy':
             y_true = np.load(y_true)[mask>0].ravel()
         elif y_true[-3:] == 'mat':
-            y_true = loadmat(y_true)[mask>0].ravel()
+            y_true = loadmat(y_true)['test_labels'][mask>0].ravel()
         else:
             raise IOError('Unrecognized filetype for y_true.')
     elif type(y_true) == np.ndarray:
@@ -75,3 +75,7 @@ def Evaluate_RIT18(y_true, y_pred, mask, file_name=None):
         savemat(file_name , metrics)
     
     return metrics
+
+
+    
+    
