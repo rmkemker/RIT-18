@@ -12,7 +12,7 @@ This repository contains the RIT-18 dataset we built for the semantic segmentati
 If you use this dataset in a publication, please cite:
 
 ```
-@article{kemker2017high,
+@article{kemker2017algorithms,
   title={Algorithms for Semantic Segmentation of Multispectral Remote Sensing Imagery using Deep Learning},
   author={Kemker, Ronald and Salvaggio, Carl and Kanan, Christopher},
   journal={arXiv preprint arXiv:1703.06452},
