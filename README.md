@@ -60,10 +60,13 @@ I will use your predicitions on the evaluate_rit18.py script that I provided her
 
 Our dataset was recently featured in a MATLAB Deep Learning Tutorial called [Semantic Segmentation of Multispectral Images Using Deep Learning](https://www.mathworks.com/help/images/multispectral-semantic-segmentation-using-deep-learning.html).
 
-## Contact
+## Points of Contact ##
+* Ronald Kemker -  http://www.cis.rit.edu/~rmk6217/
+* Carl Salvaggio - https://www.cis.rit.edu/~cnspci/
+* Chris Kanan - http://www.chriskanan.com/
 
-Author: Ronald Kemker
+## Also Check Out ##
+* EarthMapper Pipeline for Semantic Segmentation of Remote Sensing Imagery - https://github.com/rmkemker/EarthMapper
+* Machine and Neuromorphic Perception Laboratory - http://klab.cis.rit.edu/
 
-E-mail: rmk6217@rit.edu
 
-Website: [http://www.cis.rit.edu/~rmk6217/](http://www.cis.rit.edu/~rmk6217/)
