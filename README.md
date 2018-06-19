@@ -12,11 +12,14 @@ This repository contains the RIT-18 dataset we built for the semantic segmentati
 If you use this dataset in a publication, please cite:
 
 ```
-@article{kemker2017algorithms,
-  title={Algorithms for Semantic Segmentation of Multispectral Remote Sensing Imagery using Deep Learning},
-  author={Kemker, Ronald and Salvaggio, Carl and Kanan, Christopher},
-  journal={arXiv preprint arXiv:1703.06452},
-  year={2017}
+@article{kemker2018algorithms,
+title = "Algorithms for semantic segmentation of multispectral remote sensing imagery using deep learning",
+journal = "ISPRS Journal of Photogrammetry and Remote Sensing",
+year = "2018",
+issn = "0924-2716",
+doi = "https://doi.org/10.1016/j.isprsjprs.2018.04.014",
+url = "http://www.sciencedirect.com/science/article/pii/S0924271618301229",
+author = "Ronald Kemker and Carl Salvaggio and Christopher Kanan",
 }
 ```
 
@@ -52,6 +55,10 @@ The goal is to have the test labels available on the [IEEE GRSS evaluation serve
 * Compressed (so you don't kill my e-mail account)
 
 I will use your predicitions on the evaluate_rit18.py script that I provided here and send you the output file.  I will not score the area outside of the mask, but the background pixels ("class 0") will be scored.  As soon as I get this up on the evaluation server, then the user will be able to do all of this themselves.
+
+## MATLAB Tutorial
+
+Our dataset was recently featured in a MATLAB Deep Learning Tutorial called [Semantic Segmentation of Multispectral Images Using Deep Learning](https://www.mathworks.com/help/images/multispectral-semantic-segmentation-using-deep-learning.html).
 
 ## Contact
 
