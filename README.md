@@ -68,5 +68,6 @@ Our dataset was recently featured in a MATLAB Deep Learning Tutorial called [Sem
 ## Also Check Out ##
 * EarthMapper Pipeline for Semantic Segmentation of Remote Sensing Imagery - https://github.com/rmkemker/EarthMapper
 * Machine and Neuromorphic Perception Laboratory - http://klab.cis.rit.edu/
+* New URL for RIT-18 Dataset - https://www.rit.edu/dirs/rit-18
 
 
