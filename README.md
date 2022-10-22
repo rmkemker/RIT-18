@@ -2,7 +2,7 @@
 High-Resolution Multispectral Dataset for Semantic Segmentation
 
 <p align="center">
-<img  src="http://www.cis.rit.edu/~rmk6217/img/hamlin.png">
+<img  src="https://www.mathworks.com/help/examples/images_deeplearning/win64/SemanticSegmentationOfMultispectralImagesExample_01.png">
 </p>
 
 ## Description
@@ -61,7 +61,7 @@ I will use your predicitions on the evaluate_rit18.py script that I provided her
 Our dataset was recently featured in a MATLAB Deep Learning Tutorial called [Semantic Segmentation of Multispectral Images Using Deep Learning](https://www.mathworks.com/help/images/multispectral-semantic-segmentation-using-deep-learning.html).
 
 ## Points of Contact ##
-* Ronald Kemker -  http://www.cis.rit.edu/~rmk6217/
+* Ronald Kemker -  www.linkedin.com/in/ronald-kemker-66250b115
 * Carl Salvaggio - https://www.cis.rit.edu/~cnspci/
 * Chris Kanan - http://www.chriskanan.com/
 
